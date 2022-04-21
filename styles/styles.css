@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 body {
   background-color: #e2e2e2;
 }
@@ -35,6 +40,47 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: rgb(208, 208, 208);
+  background-color: #dddddd;
+}
 
+.landing-page {
+  color: #022a55;
+  font-family: 'Noto Sans KR', sans-serif;
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+.landing-page-child {
+  flex: row;
+}
+
+.landing-page-image {
+  height: calc(100vh - 50px);
+  width: auto;
+}
+
+.landing-page-text {
+  flex: 1;  /* takes remaining space*/
+  position: relative;
+}
+
+#middle-div {
+  border: 3px red solid;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  text-align: center;
+  overflow: hidden;
+}
+
+#landing-page-name {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 15px;
+}
+
+.social-media-button {
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  
 }
