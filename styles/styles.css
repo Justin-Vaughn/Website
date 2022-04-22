@@ -12,11 +12,14 @@ body {
   background-color: #e2e2e2;
 }
 
+/*Navigation Bar START*/
+
 nav {
   width: 100%;
   height: 50px;
   background-color: white;
   border: 5px #1e1e1e;
+  box-shadow: 8px black;
 }
 
 ul {
@@ -42,6 +45,12 @@ ul li a {
 ul li a:hover {
   background-color: #dddddd;
 }
+
+.nav-shadow {
+  box-shadow: 2px 2px 6px #888888;
+}
+
+/* Navigation Bar END*/
 
 .landing-page {
   color: #022a55;
@@ -82,5 +91,5 @@ ul li a:hover {
 .social-media-button {
   background-color: #e2e2e2;
   border-radius: 50%;
-  
+
 }
