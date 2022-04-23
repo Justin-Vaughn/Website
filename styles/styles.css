@@ -98,3 +98,7 @@ ul li a:hover {
   padding: 4px;
   margin: 0 10px;
 }
+
+.social-media-button:hover {
+  background-color: #dddddd;
+}
