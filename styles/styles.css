@@ -102,3 +102,7 @@ ul li a:hover {
 .social-media-button:hover {
   background-color: #dddddd;
 }
+
+#about-me-banner {
+  box-shadow: 2px 2px 6px #888888;
+}
