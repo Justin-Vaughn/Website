@@ -55,30 +55,32 @@ ul li a:hover {
 .landing-page {
   color: #022a55;
   font-family: 'Noto Sans KR', sans-serif;
-  display: flex;
   height: calc(100vh - 50px);
+  width: 100vw;
 }
 
-.landing-page-child {
-  flex: row;
+.landing-page-left {
+  height: calc(100vh - 50px);
+  width: 50vw;
+  float: left;
+}
+
+.landing-page-right {
+  height: calc(100vh - 50px);
+  overflow: hidden;
+  display: flex;
 }
 
 .landing-page-image {
-  height: calc(100vh - 50px);
-  width: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.landing-page-text {
-  flex: 1;  /* takes remaining space*/
+#personal-info {
   position: relative;
-}
-
-#middle-div {
-  position: absolute;
-  top: calc(75vh - 50px - 323px); /*323px is height of div use: const height = document.querySelector('#middle-div').offsetHeight */
-  left: 33%;
+  margin: auto;
   text-align: center;
-  overflow: hidden;
 }
 
 #landing-page-name {
