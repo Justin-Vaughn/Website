@@ -52,6 +52,14 @@ ul li a:hover {
 
 /* Navigation Bar END*/
 
+#four_o_four_text {
+  color: #022a55;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  position: relative;
+  margin: 10%;
+}
+
 .landing-page {
   color: #022a55;
   font-family: 'Noto Sans KR', sans-serif;
