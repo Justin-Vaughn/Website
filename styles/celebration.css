@@ -1,0 +1,15 @@
+* {
+    text-align: center;
+}
+
+.pfp {
+    margin-top: 50px;
+    margin-bottom: -40px;
+    border-radius: 50%;
+    height: 500px;
+}
+
+.page-break {
+    width: 250px;
+    height: auto;
+}
