@@ -1,36 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="This is the text that will be displayed on Google"
-    />
-    <title>About Me</title>
-    <link rel="shortcut icon" href="images/web-logo.png" />
-  </head>
-  <link rel="stylesheet" href="styles/normalize.css" />
-  <link rel="stylesheet" href="styles/styles.css" />
-  <body>
-    <nav class="nav-shadow">
-      <ul>
-        <li><a href="https://justinv.dev">Home</a></li>
-        <li><a href="https://justinv.dev/photos">Photo Gallery</a></li>
-        <li>
-          <a href="https://justinv.dev/Resume.pdf" target="_blank">Resume</a>
-        </li>
-        <li><a href="https://justinv.dev/aboutme">About Me</a></li>
-      </ul>
-    </nav>
-    <div>
-      <img
-        class="nav-shadow"
-        src="images/beach-banner.png"
-        alt="picture of New York City"
-      />
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>About Me</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="images/favicon.png" rel="icon">
+  <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="styles/aboutme.css" rel="stylesheet">
+  <link href="styles/responsive_nav.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="signature.png" />
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-lg-5">
+      <a class="navbar-brand" href="https://justinv.dev"><img src="signature.png" style="width: 10%;">.dev</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="https://justinv.dev">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://justinv.dev/photos">Photo Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://justinv.dev/resume.pdf">Resume</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="">About</a>
+          </li>
+
+        </ul>
+      </div>
     </div>
-    <h1 style="text-align: center">Coming Soon...</h1>
-  </body>
+  </nav>
+  
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="aboutme-about">
+          <div class="row">
+            <div class="about-me pt-4 pt-md-0">
+              <div class="title-box-2">
+                <h5 class="title-left">
+                  About me
+                </h5>
+              </div>
+              <p class="lead">
+                I have an extensive history providing technical support and customer service for nearly a decade. 
+                In combination with my technical background, I also create unique personal projects that demonstrate 
+                my skills and drive my passion for learning.
+              </p>
+              <p class="lead">
+                I am currently an sophomore in college with an interest in web-development and UX/UI design.
+              </p>
+              <p class="lead">
+                RESERVED
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="aboutme-about">
+          <div class="row">
+            <div class="about-me pt-4 pt-md-0">
+              <div class="title-box-2">
+                <h5 class="title-left">
+                  Tech Stack
+                </h5>
+              </div>
+              <p class="lead" id="tech-cons">
+                <img src="images/tech-icons/html5-logo.png" alt="HTML" title="HTML">
+                <img src="images/tech-icons/css-logo.png" alt="CSS" title="CSS">
+                <img src="images/tech-icons/javascript-logo.png" alt="JavaScript" title="JavaScript">
+                <img src="images/tech-icons/playwright-logo.png" alt="PlayWright" title="PlayWright">
+                <img src="images/tech-icons/docker-logo.png" alt="Docker" title="Docker">
+                <img src="images/tech-icons/github-logo.png" alt="GitHub" title="GitHub">
+                <img src="images/tech-icons/java-logo.png" alt="Java" title="Java">
+                <img src="images/tech-icons/python-logo.png" alt="Python" title="Python">
+                <img src="images/tech-icons/swift-logo.png" alt="Swift" title="Swift">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Projects Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Personal Projects
+              </h3>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Development</h2>
+                <p class="s-description text-center">
+                  The current website you're on! (and many more) I am developing to
+                  practice responsive design and UI/UX. I am <B>self taught</B> myself JavaScript, <B>CSS</B>,
+                  and more front end technologies to further enhance my knowledge in web development.
+                </p>
+                <a href="http://github.com/justin-vaughn" target="_blank">
+                  <div class="git-box">
+                     GitHub 
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">War Card Game</h2>
+                <p class="s-description text-center">
+                  Using <B>Xcode</B> and Apple's <B>iOS</B> simulator I was able to
+                  create a war card game allowing a user to play
+                  against a computer. The user and the computer will battle against each other and 
+                  compete for points.
+                </p>
+                <a href="http://github.com/justin-vaughn" target="_blank">
+                  <div class="git-box">
+                     GitHub 
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Discord Leaderboard</h2>
+                <p class="s-description text-center">
+                  An <B>automated</B> program that displays user's
+                  accumulated statistics, daily trends, total statistics
+                  gained, and the positions of each user in
+                  chronological order.
+                </p>
+                <a href="http://github.com/justin-vaughn" target="_blank">
+                  <div class="git-box">
+                     GitHub
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Find the Carrot</h2>
+                <p class="s-description text-center">
+                  One of my first programs I wrote when I was learning <B>JavaScript</B>.
+                  The point of the game is to get to the carrot without falling in a hole.
+                </p>
+                <a href="http://github.com/justin-vaughn" target="_blank">
+                  <div class="git-box">
+                     GitHub 
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Encryption & Decryption</h2>
+                <p class="s-description text-center">
+                  A program I wrote in <B>Python</B> to start learning <B>cryptography</B>. Uses a complex
+                  algorithm to encrypt and decrypt Strings.
+                </p>
+                <a href="http://github.com/justin-vaughn" target="_blank">
+                  <div class="git-box">
+                     GitHub 
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Twitter Bot</h2>
+                <p class="s-description text-center">
+                  Utilized <B>API</B> to develop a <B>script</B> that sent out a
+                  message to members of our community whenever a
+                  Tweet was published.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Projects Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <div class="credits">
+              Designed with ❤️ by Justin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- External JS Files -->
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/typed.js/typed.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+
+  <!-- Main JS File -->
+  <script src="scripts/main.js"></script>
+
+</body>
+
 </html>

@@ -10,7 +10,7 @@
     />
     <title>Justin's Website</title>
   </head>
-  <link rel="shortcut icon" href="images/web-logo.png" />
+  <link rel="shortcut icon" href="signature.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -19,16 +19,40 @@
   />
   <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/responsive_nav.css" />
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
   <body style="overflow: hidden">
-    <nav class="nav-shadow">
-      <ul>
-        <li><a href="https://justinv.dev">Home</a></li>
-        <li><a href="https://justinv.dev/photos">Photo Gallery</a></li>
-        <li>
-          <a href="https://justinv.dev/Resume.pdf" target="_blank">Resume</a>
-        </li>
-        <li><a href="https://justinv.dev/aboutme">About Me</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container px-lg-5">
+        <a class="navbar-brand" href="https://justinv.dev"><img src="signature.png" style="width: 10%;">.dev</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="https://justinv.dev/photos">Photo Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://justinv.dev/resume.pdf">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://justinv.dev/aboutme">About</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <div class="landing-page">
       <!--div on left for picture-->
@@ -50,7 +74,7 @@
               class="social-media-button"
               type="image"
               src="images/twitter-logo-lite.png"
-              height="25"
+              height="32rem"
               width="auto"
               onclick="window.location.href='https\://twitter.com/Jxqtin';"
             />
@@ -58,7 +82,7 @@
               class="social-media-button"
               type="image"
               src="images/linkedin-logo.png"
-              height="25"
+              height="32rem"
               width="auto"
               onclick="window.location.href='https\://linkedin.com/in/justin-vaughn21/';"
             />
@@ -66,7 +90,7 @@
               class="social-media-button"
               type="image"
               src="images/github-logo.png"
-              height="25"
+              height="32rem"
               width="auto"
               onclick="window.location.href='https\://github.com/Justin-Vaughn';"
             />
@@ -74,7 +98,7 @@
               class="social-media-button"
               type="image"
               src="images/email-logo.png"
-              height="25"
+              height="32rem"
               width="auto"
               onclick="window.location.href='mailto:business@justinv.dev'"
             />
@@ -83,5 +107,13 @@
         </div>
       </div>
     </div>
+    <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/typed.js/typed.min.js"></script>
+    <script src="vendor/php-email-form/validate.js"></script>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
