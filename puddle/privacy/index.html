@@ -60,9 +60,6 @@
     <p><strong>The short version:</strong> Puddle has no accounts, no ads and no tracking, and never sells your data. Your location is used to get your forecast, kept only as a general area, and never linked to you or your device.</p>
   </div>
 
-  <h2>Who we are</h2>
-  <p>Puddle is a weather app for iPhone made by Justin Vaughn ("we"). You can reach us at <a href="mailto:puddle@justinv.dev">puddle@justinv.dev</a>.</p>
-
   <h2>What Puddle sends to our server, and why</h2>
   <ul>
     <li><strong>Your approximate location</strong>, to get your forecast. Your exact position never leaves your phone, and we only store it as a general area of about 10 km.</li>
@@ -109,9 +106,17 @@
   <p>If this policy changes, we'll update this page and the date at the top.</p>
 
   <h2>Contact</h2>
-  <p><a href="mailto:puddle@justinv.dev">puddle@justinv.dev</a></p>
+  <p><a class="email" data-user="puddle" data-domain="justinv.dev">puddle at justinv dot dev</a></p>
 
   <footer>Puddle</footer>
 </main>
+<script>
+  // Puts the address together in the browser, so scrapers reading the raw page never see it.
+  for (const a of document.querySelectorAll("a.email")) {
+    const address = a.dataset.user + "@" + a.dataset.domain;
+    a.href = "mailto:" + address;
+    a.textContent = address;
+  }
+</script>
 </body>
 </html>
