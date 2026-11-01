@@ -57,7 +57,7 @@
   <p class="date">Effective October 31, 2026</p>
 
   <div class="summary">
-    <p><strong>The short version:</strong> Puddle has no accounts, no ads and no tracking, and never sells your data. Your location is used to get your forecast and is kept only as an approximate area of about 11 km, never linked to you or your device.</p>
+    <p><strong>The short version:</strong> Puddle has no accounts, no ads and no tracking, and never sells your data. Your location is used to get your forecast, kept only as a general area, and never linked to you or your device.</p>
   </div>
 
   <h2>Who we are</h2>
@@ -65,20 +65,20 @@
 
   <h2>What Puddle sends to our server, and why</h2>
   <ul>
-    <li><strong>Your approximate location.</strong> To get your forecast, the app sends your location rounded to two decimal places (about 1 km) to Puddle's server. The server rounds it again to an area of about 11 km and uses that area for everything it stores. Your exact position never leaves your phone.</li>
-    <li><strong>Which cards you show.</strong> The app asks only for the data behind the cards you have turned on, so our server knows which kinds of weather data each request asked for.</li>
-    <li><strong>A security key.</strong> Puddle uses Apple's App Attest to prove that requests come from the real app on a real iPhone. Your iPhone creates a random key for the app, which our server stores to check later requests. It isn't your device's advertising identifier, and it isn't connected to your name, Apple Account or location.</li>
-    <li><strong>Your Puddle Plus subscription.</strong> If you subscribe, the app sends Apple's signed record of the subscription so our server can confirm it and send Plus data. We check it and don't keep it. We never see your payment details; Apple handles all payments.</li>
+    <li><strong>Your approximate location</strong>, to get your forecast. Your exact position never leaves your phone, and we only store it as a general area of about 10 km.</li>
+    <li><strong>Which weather data the app asked for</strong>, so we can count how the service is used.</li>
+    <li><strong>A random security key</strong> that helps confirm requests come from the Puddle app. It isn't your device's advertising identifier, and it isn't connected to your name, Apple Account or location.</li>
+    <li><strong>Your Puddle Plus status.</strong> If you subscribe, the app sends Apple's record of your subscription so we can confirm it. We check it and don't keep it. We never see your payment details; Apple handles all payments.</li>
   </ul>
 
   <h2>What we keep, and for how long</h2>
   <table>
     <tr><th>What</th><th>Why</th><th>How long</th></tr>
-    <tr><td>A record of each request: the time, the ~11 km area, the data asked for, and whether it worked</td><td>To run and improve the service and count how it's used</td><td>90 days</td></tr>
-    <tr><td>Forecasts for each ~11 km area</td><td>So everyone in the same area shares one forecast</td><td>As long as the service runs, not linked to anyone</td></tr>
-    <tr><td>The App Attest security key</td><td>To check that requests come from the app</td><td>Until it's gone unused for 90 days</td></tr>
+    <tr><td>A record of each request: the time, the general area and the data asked for</td><td>To run and improve the service</td><td>90 days</td></tr>
+    <tr><td>Forecasts for each area</td><td>To provide the service</td><td>Not linked to anyone</td></tr>
+    <tr><td>The security key</td><td>To keep the service secure</td><td>Until it's gone unused for 90 days</td></tr>
   </table>
-  <p>When someone is the first to ask for a new area, our server notes which security key asked, to limit how many new areas one device can create in an hour. That note is erased after about an hour. After that, nothing we keep links a location to a device or a person. We don't store IP addresses.</p>
+  <p>We don't keep anything that links a location to a device or a person for more than about an hour, and we don't store IP addresses.</p>
 
   <h2>What stays on your iPhone</h2>
   <p>Your saved places, settings, card layout, and game streaks and badges are stored only on your iPhone. We never receive them.</p>
@@ -93,11 +93,10 @@
 
   <h2>Services Puddle uses</h2>
   <ul>
-    <li><strong>Apple.</strong> Searching for a place and showing your place's name use Apple Maps. If our server can't be reached, the app gets your forecast from Apple Weather instead. App Store purchases and App Attest are also Apple's. These follow <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
-    <li><strong>National Weather Service.</strong> To show official watches and warnings for where you are, the app asks the US National Weather Service directly, sending your location.</li>
-    <li><strong>NOAA.</strong> The severe weather outlook and the aurora forecast come from NOAA. Those requests don't include your location.</li>
-    <li><strong>Open-Meteo.</strong> Our server gets forecast data from Open-Meteo for each ~11 km area. Open-Meteo never receives anything from your phone.</li>
-    <li><strong>Cloudflare.</strong> Traffic to our server passes through Cloudflare, which sees your IP address in order to deliver it, under <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a>.</li>
+    <li><strong>Apple</strong>, for place search, the forecast when our server can't be reached, App Store purchases and app security, under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+    <li><strong>The US National Weather Service</strong>, which the app asks directly for official watches and warnings where you are, sending your location.</li>
+    <li><strong>Weather data providers</strong>, which our server gets forecast data from. They never receive anything from your phone.</li>
+    <li><strong>Cloudflare</strong>, which carries traffic to our server and sees your IP address in order to deliver it, under <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a>.</li>
   </ul>
 
   <h2>Your choices</h2>
