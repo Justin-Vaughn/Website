@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puddle Privacy Policy</title>
+<meta name="description" content="How the Puddle weather app handles your data.">
+<style>
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans.ttf") format("truetype");
+    font-weight: 300 800;
+    font-display: swap;
+  }
+  :root {
+    --bg: #f6f7fb;
+    --text: #1c2030;
+    --muted: #5d6478;
+    --rule: #dfe2ec;
+    --accent: #2f6fd6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11141f;
+      --text: #eef0f7;
+      --muted: #a3a9bb;
+      --rule: #262b3b;
+      --accent: #8cc4f2;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 32px; font-weight: 700; margin: 0 0 4px; }
+  h2 { font-size: 20px; font-weight: 700; margin: 36px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  .date { color: var(--muted); margin-bottom: 28px; }
+  .summary { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 16px 0 4px; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 12px; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 8px 8px 0; border-bottom: 1px solid var(--rule); }
+  th { font-weight: 600; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Puddle Privacy Policy</h1>
+  <p class="date">Effective October 31, 2026</p>
+
+  <div class="summary">
+    <p><strong>The short version:</strong> Puddle has no accounts, no ads and no tracking, and never sells your data. Your location is used to get your forecast and is kept only as an approximate area of about 11 km, never linked to you or your device.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Puddle is a weather app for iPhone made by Justin Vaughn ("we"). You can reach us at <a href="mailto:puddle@justinv.dev">puddle@justinv.dev</a>.</p>
+
+  <h2>What Puddle sends to our server, and why</h2>
+  <ul>
+    <li><strong>Your approximate location.</strong> To get your forecast, the app sends your location rounded to two decimal places (about 1 km) to Puddle's server. The server rounds it again to an area of about 11 km and uses that area for everything it stores. Your exact position never leaves your phone.</li>
+    <li><strong>Which cards you show.</strong> The app asks only for the data behind the cards you have turned on, so our server knows which kinds of weather data each request asked for.</li>
+    <li><strong>A security key.</strong> Puddle uses Apple's App Attest to prove that requests come from the real app on a real iPhone. Your iPhone creates a random key for the app, which our server stores to check later requests. It isn't your device's advertising identifier, and it isn't connected to your name, Apple Account or location.</li>
+    <li><strong>Your Puddle Plus subscription.</strong> If you subscribe, the app sends Apple's signed record of the subscription so our server can confirm it and send Plus data. We check it and don't keep it. We never see your payment details; Apple handles all payments.</li>
+  </ul>
+
+  <h2>What we keep, and for how long</h2>
+  <table>
+    <tr><th>What</th><th>Why</th><th>How long</th></tr>
+    <tr><td>A record of each request: the time, the ~11 km area, the data asked for, and whether it worked</td><td>To run and improve the service and count how it's used</td><td>90 days</td></tr>
+    <tr><td>Forecasts for each ~11 km area</td><td>So everyone in the same area shares one forecast</td><td>As long as the service runs, not linked to anyone</td></tr>
+    <tr><td>The App Attest security key</td><td>To check that requests come from the app</td><td>Until it's gone unused for 90 days</td></tr>
+  </table>
+  <p>When someone is the first to ask for a new area, our server notes which security key asked, to limit how many new areas one device can create in an hour. That note is erased after about an hour. After that, nothing we keep links a location to a device or a person. We don't store IP addresses.</p>
+
+  <h2>What stays on your iPhone</h2>
+  <p>Your saved places, settings, card layout, and game streaks and badges are stored only on your iPhone. We never receive them.</p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>No accounts, sign-up, names, email addresses or phone numbers.</li>
+    <li>No ads, no tracking across other apps or websites, and no sharing with data brokers.</li>
+    <li>No analytics or crash-reporting code from other companies in the app.</li>
+    <li>We never sell your data.</li>
+  </ul>
+
+  <h2>Services Puddle uses</h2>
+  <ul>
+    <li><strong>Apple.</strong> Searching for a place and showing your place's name use Apple Maps. If our server can't be reached, the app gets your forecast from Apple Weather instead. App Store purchases and App Attest are also Apple's. These follow <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+    <li><strong>National Weather Service.</strong> To show official watches and warnings for where you are, the app asks the US National Weather Service directly, sending your location.</li>
+    <li><strong>NOAA.</strong> The severe weather outlook and the aurora forecast come from NOAA. Those requests don't include your location.</li>
+    <li><strong>Open-Meteo.</strong> Our server gets forecast data from Open-Meteo for each ~11 km area. Open-Meteo never receives anything from your phone.</li>
+    <li><strong>Cloudflare.</strong> Traffic to our server passes through Cloudflare, which sees your IP address in order to deliver it, under <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a>.</li>
+  </ul>
+
+  <h2>Your choices</h2>
+  <p>Puddle asks for your location so it can show your local weather. You can turn location access off at any time in the Settings app; you can still search for places. Because we don't keep anything that identifies you, we can't look up or delete data about a particular person, but request records are deleted automatically after 90 days. If you have a question about your data, email us.</p>
+
+  <h2>Children</h2>
+  <p>Puddle isn't directed at children under 13, and we don't knowingly collect personal information from anyone.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we'll update this page and the date at the top.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:puddle@justinv.dev">puddle@justinv.dev</a></p>
+
+  <footer>Puddle</footer>
+</main>
+</body>
+</html>
