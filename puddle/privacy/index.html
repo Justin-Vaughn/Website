@@ -54,15 +54,15 @@
 <body>
 <main>
   <h1>Puddle Privacy Policy</h1>
-  <p class="date">Effective October 31, 2026</p>
+  <p class="date">Effective November 12, 2026</p>
 
   <div class="summary">
-    <p><strong>The short version:</strong> Puddle has no accounts, no ads and no tracking, and never sells your data. Your location is used to get your forecast, kept only as a general area, and never linked to you or your device.</p>
+    <p><strong>The short version:</strong> Puddle has no accounts, no ads and no tracking, and never sells your data. Your location is used to get your forecast, kept only as a general area, and never linked to you or your device. The one exception is notifications: if you turn them on, our server keeps the places you want them for, linked to a random ID for your device, until you turn them off.</p>
   </div>
 
   <h2>What Puddle sends to our server, and why</h2>
   <ul>
-    <li><strong>Your approximate location</strong>, to get your forecast. Your exact position never leaves your phone, and we only store it as a general area of about 10 km.</li>
+    <li><strong>Your approximate location</strong>, to get your forecast. For forecasts, your exact position never leaves your phone, and we only store it as a general area of about 10 km.</li>
     <li><strong>Which weather data the app asked for</strong>, so we can count how the service is used.</li>
     <li><strong>A random security key</strong> that helps confirm requests come from the Puddle app. It isn't your device's advertising identifier, and it isn't connected to your name, Apple Account or location.</li>
     <li><strong>Your Puddle Plus status.</strong> If you subscribe, the app sends Apple's record of your subscription so we can confirm it. We check it and don't keep it. We never see your payment details; Apple handles all payments.</li>
@@ -75,10 +75,25 @@
     <tr><td>Forecasts for each area</td><td>To provide the service</td><td>Not linked to anyone</td></tr>
     <tr><td>The security key</td><td>To keep the service secure</td><td>Until it's gone unused for 90 days</td></tr>
   </table>
-  <p>We don't keep anything that links a location to a device or a person for more than about an hour, and we don't store IP addresses.</p>
+  <p>Apart from notifications (below), we don't keep anything that links a location to a device for more than about an hour. We don't store IP addresses.</p>
+
+  <h2>If you turn on notifications</h2>
+  <p>Notifications are off until you turn them on in Puddle's settings. To send them, our server needs to know where to look and how to reach your iPhone, so while they're on it keeps:</p>
+  <ul>
+    <li><strong>A push token</strong>, the address Apple gives your iPhone for Puddle's notifications, and a random ID the app makes for your install. Neither is your name, Apple Account or advertising identifier.</li>
+    <li><strong>The places you want notifications for:</strong> where you are, if you turn that on, and any saved places you choose, with their names. These are exact locations, so we can check the weather there. If you let Puddle use your location in the background, where you are is updated as you move.</li>
+    <li><strong>Your notification settings:</strong> which kinds you want, the notifications you build, quiet hours, your units and clock (so notifications read the way the app does), the app version and whether you have Puddle Plus.</li>
+    <li><strong>Which warnings we've already sent you</strong>, so you don't get the same one twice.</li>
+  </ul>
+  <table>
+    <tr><th>What</th><th>Why</th><th>How long</th></tr>
+    <tr><td>Push token, install ID, places and notification settings</td><td>To send the notifications you asked for</td><td>Until you turn notifications off, or after 90 days without the app checking in</td></tr>
+    <tr><td>Warnings already sent</td><td>To avoid repeats</td><td>7 days</td></tr>
+  </table>
+  <p>Turning notifications off in Puddle deletes all of this from our server. We use it only to send your notifications, and never to track you or build a profile.</p>
 
   <h2>What stays on your iPhone</h2>
-  <p>Your saved places, settings, card layout, and game streaks and badges are stored only on your iPhone. We never receive them.</p>
+  <p>Your saved places, settings, card layout, and game streaks and badges are stored only on your iPhone. We never receive them, except the places and settings you choose for notifications, as described above.</p>
 
   <h2>What we don't do</h2>
   <ul>
@@ -91,13 +106,14 @@
   <h2>Services Puddle uses</h2>
   <ul>
     <li><strong>Apple</strong>, for place search, the forecast when our server can't be reached, App Store purchases and app security, under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
-    <li><strong>The US National Weather Service</strong>, which the app asks directly for official watches and warnings where you are, sending your location.</li>
+    <li><strong>Apple Push Notification service</strong>, which delivers notifications to your iPhone. Apple receives your push token and each notification's text in order to deliver it.</li>
+    <li><strong>The US National Weather Service</strong>, which the app asks directly for official watches and warnings where you are, sending your location. For notifications, our server also asks it about the general areas being watched, without anything about you or your device.</li>
     <li><strong>Weather data providers</strong>, which our server gets forecast data from. They never receive anything from your phone.</li>
     <li><strong>Cloudflare</strong>, which carries traffic to our server and sees your IP address in order to deliver it, under <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a>.</li>
   </ul>
 
   <h2>Your choices</h2>
-  <p>Puddle asks for your location so it can show your local weather. You can turn location access off at any time in the Settings app; you can still search for places. Because we don't keep anything that identifies you, we can't look up or delete data about a particular person, but request records are deleted automatically after 90 days. If you have a question about your data, email us.</p>
+  <p>Puddle asks for your location so it can show your local weather. You can turn location access off at any time in the Settings app; you can still search for places. You can turn notifications off in Puddle's settings at any time, which deletes your notification data from our server. If you turn them off in the Settings app instead, Puddle deletes it the next time it opens. Because we don't keep anything that identifies you, we can't look up or delete data about a particular person, but request records are deleted automatically after 90 days. If you have a question about your data, email us.</p>
 
   <h2>Children</h2>
   <p>Puddle isn't directed at children under 13, and we don't knowingly collect personal information from anyone.</p>
